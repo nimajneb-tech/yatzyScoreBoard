@@ -3,16 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1BB4BF2926AEBDC200C19D89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB4BF2826AEBDC200C19D89 /* AppDelegate.swift */; };
 		1BB4BF2B26AEBDC200C19D89 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB4BF2A26AEBDC200C19D89 /* SceneDelegate.swift */; };
-		1BB4BF2D26AEBDC200C19D89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB4BF2C26AEBDC200C19D89 /* ViewController.swift */; };
 		1BB4BF3026AEBDC200C19D89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB4BF2E26AEBDC200C19D89 /* Main.storyboard */; };
 		1BB4BF3226AEBDC300C19D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BB4BF3126AEBDC300C19D89 /* Assets.xcassets */; };
 		1BB4BF3526AEBDC300C19D89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BB4BF3326AEBDC300C19D89 /* LaunchScreen.storyboard */; };
+		1BC1DCFA26B92D8E00CBF33E /* YatzyScoreCardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1DCF926B92D8E00CBF33E /* YatzyScoreCardController.swift */; };
+		1BC1DCFE26B9311300CBF33E /* YatzyScoreCardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BC1DCFD26B9311300CBF33E /* YatzyScoreCardViewModel.swift */; };
 		6602C4552B8503606960FBAD /* Pods_YatzyScorecard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E4FCA6025C45260034E2C1A /* Pods_YatzyScorecard.framework */; };
 /* End PBXBuildFile section */
 
@@ -20,11 +21,12 @@
 		1BB4BF2526AEBDC200C19D89 /* YatzyScorecard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YatzyScorecard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BB4BF2826AEBDC200C19D89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BB4BF2A26AEBDC200C19D89 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1BB4BF2C26AEBDC200C19D89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1BB4BF2F26AEBDC200C19D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1BB4BF3126AEBDC300C19D89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1BB4BF3426AEBDC300C19D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1BB4BF3626AEBDC300C19D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BC1DCF926B92D8E00CBF33E /* YatzyScoreCardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YatzyScoreCardController.swift; sourceTree = "<group>"; };
+		1BC1DCFD26B9311300CBF33E /* YatzyScoreCardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YatzyScoreCardViewModel.swift; sourceTree = "<group>"; };
 		3AEA842E00B6DB5470C56C3D /* Pods-YatzyScorecard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YatzyScorecard.release.xcconfig"; path = "Target Support Files/Pods-YatzyScorecard/Pods-YatzyScorecard.release.xcconfig"; sourceTree = "<group>"; };
 		88596D23D9AF949F9A6A946A /* Pods-YatzyScorecard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YatzyScorecard.debug.xcconfig"; path = "Target Support Files/Pods-YatzyScorecard/Pods-YatzyScorecard.debug.xcconfig"; sourceTree = "<group>"; };
 		8E4FCA6025C45260034E2C1A /* Pods_YatzyScorecard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YatzyScorecard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,15 +65,32 @@
 		1BB4BF2726AEBDC200C19D89 /* YatzyScorecard */ = {
 			isa = PBXGroup;
 			children = (
+				1BC1DCFC26B930E400CBF33E /* ViewModel */,
+				1BC1DCFB26B930DC00CBF33E /* View */,
 				1BB4BF2826AEBDC200C19D89 /* AppDelegate.swift */,
 				1BB4BF2A26AEBDC200C19D89 /* SceneDelegate.swift */,
-				1BB4BF2C26AEBDC200C19D89 /* ViewController.swift */,
 				1BB4BF2E26AEBDC200C19D89 /* Main.storyboard */,
 				1BB4BF3126AEBDC300C19D89 /* Assets.xcassets */,
 				1BB4BF3326AEBDC300C19D89 /* LaunchScreen.storyboard */,
 				1BB4BF3626AEBDC300C19D89 /* Info.plist */,
 			);
 			path = YatzyScorecard;
+			sourceTree = "<group>";
+		};
+		1BC1DCFB26B930DC00CBF33E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1BC1DCF926B92D8E00CBF33E /* YatzyScoreCardController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1BC1DCFC26B930E400CBF33E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1BC1DCFD26B9311300CBF33E /* YatzyScoreCardViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		6C4681E73AAAFA7953CB3677 /* Frameworks */ = {
@@ -88,7 +107,6 @@
 				88596D23D9AF949F9A6A946A /* Pods-YatzyScorecard.debug.xcconfig */,
 				3AEA842E00B6DB5470C56C3D /* Pods-YatzyScorecard.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -206,9 +224,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BB4BF2D26AEBDC200C19D89 /* ViewController.swift in Sources */,
 				1BB4BF2926AEBDC200C19D89 /* AppDelegate.swift in Sources */,
 				1BB4BF2B26AEBDC200C19D89 /* SceneDelegate.swift in Sources */,
+				1BC1DCFA26B92D8E00CBF33E /* YatzyScoreCardController.swift in Sources */,
+				1BC1DCFE26B9311300CBF33E /* YatzyScoreCardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
